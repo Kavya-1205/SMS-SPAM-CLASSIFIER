@@ -27,8 +27,11 @@ The system converts raw text messages into numerical features using **TF-IDF vec
 ## 📂 Project Structure
 SMS-Spam-Classifier/
 │── spamfilter.py # Main ML model script
+
 │── spam.csv # Dataset (spam & ham messages)
+
 │── requirements.txt # Python dependencies
+
 └── README.md # Documentation
 
 ---
@@ -57,7 +60,8 @@ print(predict_spam("Class will start at 2 PM today."))
 | Accuracy   | ~96%                           |
 | Evaluation | Classification Report included |
 
-🗂 Dataset
+
+## 🗂 Dataset
 
 The dataset contains:
 
