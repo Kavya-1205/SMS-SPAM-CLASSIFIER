@@ -35,41 +35,38 @@ The dataset contains two categories of SMS messages:
 ---
 
 ## 📂 Project Structure
-
 SMS-Spam-Classifier/
-
 │── spamfilter.py # Main ML model script
-
 │── spam.csv # Dataset (spam & ham messages)
-
 │── requirements.txt # Python dependencies
-
 └── README.md # Documentation
 
+yaml
+Copy code
 
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 🔧 Installation
-
-git clone https://github.com/<your-username>/SMS-Spam-Classifier.git
+```bash
+git clone https://github.com/Kavya-1205/SMS-Spam-Classifier.git
 cd SMS-Spam-Classifier
 pip install -r requirements.txt
-
 ▶️ Run the Project
-
+bash
+Copy code
 python spamfilter.py
-
 🔎 Example Usage
-
+python
+Copy code
 print(predict_spam("Congratulations! You won a cash prize! Click here!"))
 # Output → Spam
 
 print(predict_spam("Class will start at 2 PM today."))
 # Output → Not Spam
-
 📊 Model Performance
 Metric	Score
 Accuracy	~96%
 Evaluation	Classification Report included
+
