@@ -61,12 +61,11 @@ print(predict_spam("Class will start at 2 PM today."))
 | Evaluation | Classification Report included |
 
 
-## 🗂 Dataset
+### 🗂 Dataset
+The dataset contains two types of SMS messages:
 
-The dataset contains:
+📌 **spam** → unwanted promotional / scam / phishing / lottery / marketing messages  
+📌 **ham** → normal messages sent by known contacts or valid services  
 
-spam → unwanted promotional / scam / phishing messages
+📍 **Source:** *SMS Spam Collection Dataset*
 
-ham → normal messages
-
-Source: SMS Spam Collection Dataset
