@@ -1,85 +1,58 @@
-# SMS-SPAM-CLASSIFIER
-✅ Project Overview
+📩 SMS Spam Classification using Machine Learning
 
-SMS Spam Classifier is an NLP-based machine learning system designed to detect and classify mobile text messages as:
+This project is an NLP-based Machine Learning model that classifies SMS messages as Spam or Not Spam.
+The system converts raw text messages into numerical features using TF-IDF vectorization and predicts categories using a Multinomial Naïve Bayes classifier, achieving ~96% accuracy.
 
-📩 Spam (Promotional / Fraud / Phishing)
-✉️ Not Spam (Normal SMS)
+🚀 Features
 
-The system uses a Naïve Bayes classifier with TF-IDF text vectorization and provides real-time message prediction.
+🔍 Accurate spam vs. non-spam SMS prediction
 
-Access is provided through:
+✨ Real-time custom message input support
 
-🔹 Python script
-🔹 Trained ML pipeline
-🔹 Custom message input prediction
+📊 Model evaluation included (precision, recall, f1-score)
 
-🔹 1. Spam Detection Model (Python – Scikit-Learn)
-✅ Setup
-cd spam_classifier
+📁 Clean ML pipeline (preprocess → train → predict)
+
+🧠 Tech Stack
+Category	Tools Used
+Language	Python
+Data Handling	Pandas, NumPy
+Machine Learning	Scikit-Learn
+NLP	CountVectorizer, TF-IDF
+Algorithm	Multinomial Naïve Bayes
+📂 Project Structure
+SMS-Spam-Classifier/
+│── spamfilter.py          # Main ML model script
+│── spam.csv               # Dataset (spam & ham messages)
+│── requirements.txt       # Python dependencies
+└── README.md              # Documentation
+
+⚙️ Setup Instructions
+🔧 Installation
+git clone https://github.com/<your-username>/SMS-Spam-Classifier.git
+cd SMS-Spam-Classifier
 pip install -r requirements.txt
 
-📥 Dataset
-
-The dataset spam.csv includes 2 columns:
-
-Column	Description
-v1	Label (spam / ham)
-v2	SMS message content
-🧠 Training Workflow
-
-Clean & preprocess dataset
-
-Convert text to numerical format using
-
-CountVectorizer
-
-TF-IDF Transformer
-
-Train Multinomial Naïve Bayes classifier
-
-Evaluate using classification metrics
-
-🚀 Run the Program
+▶️ Run the Project
 python spamfilter.py
 
-🔌 Core Prediction Function
-def predict_spam(message):
-    prediction = pipeline.predict([message])
-    return "Spam" if prediction[0] == 1 else "Not Spam"
+🔎 Example Usage
+print(predict_spam("Congratulations! You won a cash prize! Click here!"))
+# Output: Spam
 
-🔗 Example Usage
-print(predict_spam("Congratulations! You won a free iPhone, click here to claim"))
-# Output → Spam
+print(predict_spam("Class will start at 2 PM today."))
+# Output: Not Spam
 
-print(predict_spam("Meeting at 3 PM, don't be late"))
-# Output → Not Spam
+📊 Model Performance
+Metric	Score
+Accuracy	~96%
+Evaluation	Classification Report included
+🗂 Dataset
 
-🔎 Model Evaluation
+The dataset contains:
 
-Outputs:
+spam → unwanted promotional / scam / phishing messages
 
-Accuracy Score
+ham → normal messages
 
-Precision / Recall / F1-Score
-
-Confusion Matrix (optional)
-
-Achieved Accuracy: ~96%
-
-🔧 Tech Stack
-Component	Tools
-Language	Python
-ML Library	Scikit-Learn
-Data Handling	Pandas
-NLP	CountVectorizer + TF-IDF
-Algorithm	Multinomial Naïve Bayes
-🌐 (Optional) API / Deployment Ideas
-
-Future integration options:
-
-FastAPI endpoint for spam checks
-
-Flask / Streamlit UI for public input
-
-Deployment on Render / Hugging Face Spaces
+Source: SMS Spam Collection Dataset
