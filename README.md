@@ -71,3 +71,7 @@ print(predict_spam("Congratulations! You won a cash prize! Click here!"))
 print(predict_spam("Class will start at 2 PM today."))
 # Output → Not Spam
 
+📊 Model Performance
+Metric	Score
+Accuracy	~96%
+Evaluation	Classification Report included
