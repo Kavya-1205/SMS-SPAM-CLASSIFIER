@@ -36,20 +36,23 @@ The dataset contains two categories of SMS messages:
 
 ## 📂 Project Structure
 SMS-Spam-Classifier/
+
 │── spamfilter.py # Main ML model script
+
 │── spam.csv # Dataset (spam & ham messages)
+
 │── requirements.txt # Python dependencies
+
 └── README.md # Documentation
 
-yaml
-Copy code
 
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 🔧 Installation
-```bash
+
+
 git clone https://github.com/Kavya-1205/SMS-Spam-Classifier.git
 cd SMS-Spam-Classifier
 pip install -r requirements.txt
