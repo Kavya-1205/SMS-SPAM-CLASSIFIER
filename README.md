@@ -53,13 +53,11 @@ SMS-Spam-Classifier/
 
 ### 🔧 Installation
 
-
-```bash
 git clone https://github.com/<your-username>/SMS-Spam-Classifier.git
 cd SMS-Spam-Classifier
 pip install -r requirements.txt
 
-### ▶️ Run the Project
+▶️ Run the Project
 
 python spamfilter.py
 
